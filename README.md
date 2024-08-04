@@ -53,7 +53,6 @@ The application will be accessible at http://127.0.0.1:8000 by default.
 
 # Authentication
 The API uses Laravel Sanctum for authentication. Make sure to include the authentication token in your request headers as follows:
-
-Authorization: Bearer {token}
-Token: CourierPlus@321
+    Authorization: Bearer {token}
+    Token: CourierPlus@321
 
