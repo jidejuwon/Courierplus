@@ -51,8 +51,8 @@ The application will be accessible at http://127.0.0.1:8000 by default.
     Like Post: POST /api/posts/{postId}/like
     Comment on Post: POST /api/posts/{postId}/comments
 
-# Authentication
-The API uses Laravel Sanctum for authentication. Make sure to include the authentication token in your request headers as follows:
+## Authentication
+# The API uses Laravel Sanctum for authentication. Make sure to include the authentication token in your request headers as follows:
     Authorization: Bearer {token}
     Token: CourierPlus@321
 
