@@ -39,6 +39,7 @@ Route::middleware(['auth:sanctum', 'token'])->group(function () {
     Route::post('/blogs/{blogId}/posts/{postId}', [PostController::class, 'update']);
     Route::delete('/blogs/{blogId}/posts/{postId}', [PostController::class, 'destroy']);
 
-    Route::post('/likes/{postId}', [LikeController::class, 'store']);
-    Route::post('/comments/{postId}',[CommentController::class, 'store']);
+    Route::post('/posts/{postId}/like', [LikeController::class, 'store']);
+    Route::post('/posts/{postId}/comment',[CommentController::class, 'store']);
+
 });
